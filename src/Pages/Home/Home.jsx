@@ -1,9 +1,10 @@
 import React from 'react'
+import Products from './Products/Products'
 
 export default function Home() {
   return (
     <div>
-        <h1 className='text-lg font-semibold text-black'>This is home components</h1>
+        <Products></Products>
     </div>
   )
 }
