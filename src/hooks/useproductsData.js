@@ -6,7 +6,7 @@ export default function useproductsData() {
 
 
 
-    const {data : products =[]} = useQuery({
+    const {data : products =[] , refetch} = useQuery({
         queryKey : ['products'],
         queryFn : async() => {
             const res = await axios.get('https://admin.refabry.com/api/all/product/get')
@@ -14,5 +14,5 @@ export default function useproductsData() {
             return res?.data?.data?.data
         }
     })
-  return [products]
+  return [products , refetch]
 }

@@ -7,7 +7,7 @@ import useproductsData from '../../../hooks/useproductsData'
 
 export default function Products() {
 
-    const [products] = useproductsData()
+    const [products , refetch] = useproductsData()
   return (
     <div>
          <div className="bg-slate-100 pb-10">
@@ -22,11 +22,10 @@ export default function Products() {
 
         {
           products &&
-          products?.map(product =><Link to={`/detailsProduct/${product?.id}`}> <Card
+          products?.map(product => <Card
             key={product.unique_id}
             product={product}
-            
-          ></Card></Link>)
+          ></Card>)
         }
         
 
