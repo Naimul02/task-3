@@ -1,12 +1,57 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 How to Run This React Project Locally
 
-Currently, two official plugins are available:
+Follow these simple steps to get the project up and running on your local machine:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✅ Requirements
 
-## Expanding the ESLint configuration
+- **Node.js** (version 14 or later)
+- **npm** (comes with Node.js)
+- Internet connection (to install dependencies)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 📅 1. Clone the Repository
+
+```bash
+git clone https://github.com/Naimul02/task-3.git
+```
+
+
+
+---
+
+### 📁 2. Navigate to the Project Folder
+
+```bash
+cd task-3
+```
+
+---
+
+### 📦 3. Install Project Dependencies
+
+```bash
+npm install
+```
+
+This will install all the required packages listed in `package.json`.
+
+---
+
+### 🏃 4. Run the Project in Development Mode
+
+Depending on how your project was set up (Vite or Create React App), run one of the following:
+
+#### 👉 If your project uses **Vite**:
+
+```bash
+npm run dev
+```
+
+By default, it will be available at:
+
+```
+http://localhost:5173
+```
+

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-        <footer className="footer flex justify-between shadow-2xl  bg-white text-base-content py-10 px-12  ">
+        <footer className="footer flex  flex-col lg:flex-row justify-between shadow-2xl  bg-white text-base-content py-10 px-12  ">
   <aside>
 
     <div className='w-14 h-14 rounded-full'>
@@ -39,7 +39,7 @@ export default function Footer() {
     <a className="link link-hover">Cookie policy</a>
   </nav>
 </footer>
-<footer className="footer footer-center bg-white border-t text-base-content p-4 mb-[13%] lg:mb-0">
+<footer className="footer footer-center bg-white border-t text-base-content p-4  lg:mb-0">
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All right reserved by NESN39</p>
   </aside>

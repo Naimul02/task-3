@@ -15,7 +15,13 @@ createRoot(document.getElementById('root')).render(
     <QueryClientProvider client={queryClient}>
     <RouterProvider router={router}>
     </RouterProvider>
-    <Toaster />
+    <Toaster 
+    reverseOrder={false} toastOptions={{
+    style: {
+      zIndex: 9999,
+    },
+    
+  }} />
     </QueryClientProvider>
   </StrictMode>,
 )

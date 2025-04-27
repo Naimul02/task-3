@@ -84,12 +84,16 @@ export default function DetailsProduct() {
       .then(res => {
         console.log(res.data)
         if(res.data?.status){
-          toast.success(res.data?.message);
+          toast.success(res.data?.message , {
+            position : 'top-right'
+          });
           refetch()
         }
       })
       .catch(error => {
-        toast.error(error.message)
+        toast.error(error?.error?.c_phone  , {
+          position : 'top-right'
+        })
         console.error(error.message)
       })
 
@@ -101,7 +105,7 @@ export default function DetailsProduct() {
 return (
   <div>
       
-      <div className="bg-slate-100 py-20 lg:py-16">
+      <div className="bg-slate-100 py-8 lg:py-16">
 
 <div className="mx-[10px] lg:mx-8 p-3 lg:p-8 rounded  bg-white">
 
